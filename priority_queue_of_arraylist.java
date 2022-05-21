@@ -4,10 +4,11 @@ class Solution {
         PriorityQueue<ArrayList<Integer>>pq = new PriorityQueue<ArrayList<Integer>>(new Comparator<ArrayList<Integer>>(){
             public int compare(ArrayList<Integer>a , ArrayList<Integer>b) {
                 if(a.get(0) < b.get(0)){
-                    return -1 ;
-                } else{
-                    return 1 ;
+                    return -1 ; // do not swap 
+                } else if(a.get(0) > b.get(0)){
+                    return -1 ; // swap the values 
                 }
+                return 0 ; // do not change anything 
                 
             }
         }) ;
