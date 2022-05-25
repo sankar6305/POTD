@@ -6,9 +6,11 @@ class Solution {
                 if(a.get(0) < b.get(0)){
                     return -1 ; // do not swap 
                 } else if(a.get(0) > b.get(0)){
-                    return -1 ; // swap the values 
+                    return 1 ; // swap the values 
                 }
                 return 0 ; // do not change anything 
+                //swap in asscending order  1
+                // mo change -1,0
                 
             }
         }) ;
